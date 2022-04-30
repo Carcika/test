@@ -1,0 +1,176 @@
+:root{
+    --primary-text: #333;
+    --secondary-text: rgba(153, 112, 0, 1);
+
+    --primary-background : #2E2E2E;
+    --secondary-background : #4B4B4B;
+    --active-background : #D85757;
+
+    /*  დრო არ მქონდა ყველა ფერი დამემატებინა თუმცა გავიგე და ამით შევასრულებ ამ პროექტს */
+}
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+body{
+    color: var(--primary-text);
+    font-family: 'Roboto', sans-serif; /* ARIAL MINDA  */
+}
+.container{
+    margin: 0 auto;
+  /*   max-width: 960px; */
+  width: 960px;
+}
+
+/* GLOBALS */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* GLOBALS */
+
+
+.link:hover{
+    text-decoration: underline;
+}
+
+header{
+    display: flex;
+    flex-direction: column ;
+}
+header .top-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary-background);
+    padding: 10px 0;
+}
+
+header .top-navigation ul{
+    display: flex;
+    flex-direction: row;
+   
+}
+header .top-navigation ul li{
+    padding-right: 10px ;
+}
+header .top-navigation ul a{
+    color: gray;
+}
+
+header .top-navigation .media-icons i{
+    background-color: var(--secondary-background);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    transition:0.3s ease-in-out ;
+}
+header .top-navigation .media-icons i:hover{
+    background-color: var(--active-background);
+}
+
+/* headeris gareshec mushaobs hoveri */
+
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header .nobody{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+header .nobody .search {
+    padding: auto 0;
+    display: flex;
+   /*  align-items: center; */
+    width: 289px;
+    /* height: 33px; */
+    
+  
+}
+
+.searcher-item {
+    padding-top: 20px;
+}
+
+
+input[type="text"] {
+ background-color: #f1f1f1;
+ border:none;
+ height: 31px;
+ width: 215px;
+ border-radius: 5px;
+ outline: none;
+}
+
+input[type='submit'] {
+    background-color: #0099ff;
+    color: #ffffff;
+    width: 68px;
+    height: 32px;
+    border-radius:8px;
+    border:none;
+}
+
+
+.contact {
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    border-left: 5px solid #0099ff;
+    width: 960px;
+    height: 120px;
+   /*  padding: 36px; */ /* vfikrob ro es paddingi ar mchirdeba da xelit unda gavuwero orives */
+    /* align-items: center; */
+    /* ვფიქრობდი რომ ამით ხაზს გავასწორებდი ორი დივის */
+
+}
+/* .contact-items , .{
+    
+} */
+/* tagebi unda gavasworo */
+
+.contact-items {
+    display: flex;
+  flex-direction: column;
+    /* justify-content: space-between; */
+    /* margin-top: 112px; */
+    box-sizing: border-box;
+    margin-top: 30px;
+    line-height: 32px;
+    font-weight: 300px;
+    letter-spacing: 1.5px;
+    margin-left: 9px;
+}  
+/* 
+ .contact-button  {
+   padding-bottom: 28px;
+    padding-top: 32px;
+ } */
+
+
+/*  ვერ წვდება თუ რა ხდება */
+/* aq teksts ver vatetreb da tu a-s mviawer kvealferi fuchdeba zedebic feraddeba */
+.third-button {
+    width: 258px;
+    height: 58px;
+    background-color: #0099ff;
+    color: #e3e0e0;
+    border: none;
+    border-radius: 10px;
+    margin-top:30px;
+    margin-right: 30px;
+
+}
+
+/* amito wavshale eg anchori da ubralod gasworebas vcdilob */

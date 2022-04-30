@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Libre Bodoni', serif;
+    font-weight: 400;
+}
+body {
+    background: rgb(59, 59, 59);
+}
+.main {
+    position: absolute;
+    width: 100%;
+}
+.container {
+    position: relative;
+    margin: auto;
+    width: 960px;
+    height: 100vh;
+    background: rgb(224, 224, 224);
+}
+
+/* top header */
+
+.header-top {
+    position: absolute;
+    width: 960px;
+    height: 50px;
+    background: rgb(50, 50, 50);
+    
+}
+
+/* middle header */
+
+.header-middle{
+    position: absolute;
+    width: 960px;
+    height: 70px;
+    background: white;
+    top: 45px;
+}
+
+/* search header-ი */
+
+.header-bottom {
+    position: absolute;
+    width: 960px;
+    height: 150px;
+    background: white;
+    top: 120px;
+}
+.header-bottom h1 {
+    position: relative;
+    font-size: 40px;
+    padding: 40px;
+    color: rgb(58, 58, 58);
+}
+.header-bottom input {
+    transform: translate(660px, -75px);
+    width: 205px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #f1f1f1;
+}
+.header-bottom input::placeholder {
+    position: relative;
+    left: 5%;
+}
+.header-bottom button {
+    position: relative;
+    left: 670px;
+    bottom: 75px;
+    width: 53px;
+    height: 28px;
+    background: #0099ff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+.header-bottom p {
+    color: grey;
+    transform: translate(40px, -30px);
+}
+
+/* Image Slider */
+
+.title {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background: #f1f1f1;
+    top: 275px;
+}
+.title h1 {
+    font-size: 34px;
+    width: 35%;
+    color: rgb(58, 58, 58);
+    transform: translate(35px, 95px);
+}
+.title p {
+    width: 38%;
+    color: rgb(103, 103, 103);
+    transform: translate(35px, 108px);
+}
+.title button {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background: #0099ff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    letter-spacing: 0.3mm;
+    transform: translate(35px, 135px);
+}
+.slider {
+    width: 450px;
+    height: 380px;
+    overflow: hidden;
+    position: absolute;
+    left: 51%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.slides {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide {
+    width: 20%;
+    transition: 0.5s;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+.s1 {
+    background: rgb(54, 54, 54);
+    width: 100%;
+    height: 100%;
+}
+.s2 {
+    background: yellow;
+    width: 100%;
+    height: 100%;
+}
+.s3 {
+    background: green;
+    width: 100%;
+    height: 100%;
+}
+.s4 {
+    background: blue;
+    width: 100%;
+    height: 100%;
+}
+.navigation {
+    position: absolute;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.bar {
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transform: translate(30px, 330px);
+    cursor: pointer;
+}
+.bar:active {
+    background: black;
+}
+#r1:checked ~ .default {
+    margin-left: 0%;
+}
+#r2:checked ~ .default {
+    margin-left: -20%;
+}
+#r3:checked ~ .default {
+    margin-left: -40%;
+}
+#r4:checked ~ .default {
+    margin-left: -60%;
+}
